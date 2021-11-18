@@ -44,6 +44,7 @@ FROM employees
 WHERE last_name LIKE '%e'
 AND last_name LIKE 'e%';
 
+# find all employees with 'q' in their last name but not 'qu'
 SELECT *
 FROM employees
 WHERE last_name LIKE '%q%'
