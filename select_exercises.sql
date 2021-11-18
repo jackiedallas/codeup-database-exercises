@@ -8,10 +8,15 @@ WHERE artist = 'Pink Floyd';
 # Year Sgt. Pepper's Lonely Hearts Club Band was released.
 SELECT release_date AS 'Sgt. Pepper''s Lonely Hearts Club was released in'
 FROM albums
-WHERE artist = 'Sgt. Pepper''s Lonely Hearts Club Band';
+WHERE name = 'Sgt. Pepper''s Lonely Hearts Club Band';
 
 # Genre for Nevermind
 SELECT genre AS 'Nevermind''s genre is'
 FROM albums
-WHERE artist = 'Nevermind';
+WHERE name = 'Nevermind';
+
+# Albums released in 1990s
+SELECT name AS 'Albums released in the 90s'
+FROM albums
+WHERE release_date BETWEEN 1989 AND 1991;
 
