@@ -20,3 +20,8 @@ SELECT name AS 'Albums released in the 90s'
 FROM albums
 WHERE release_date BETWEEN 1989 AND 1991;
 
+# Albums with less than 20 million in sales
+SELECT name as 'Albums with less than 20 million copies sold'
+FROM albums
+WHERE sales < 20;
+
