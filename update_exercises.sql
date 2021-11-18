@@ -1,7 +1,7 @@
 USE codeup_test_db;
 
 # output all albums
-SELECT name AS 'All Albums', artist, release_date
+SELECT *
 FROM albums;
 
 # output all albums before 1990
@@ -23,6 +23,20 @@ UPDATE albums
 SET release_date = release_date - 100
 WHERE release_date <= 1980;
 
+# update michael jackson to peter jackson
 UPDATE albums
 SET artist = 'Peter Jackson'
 WHERE artist = 'Michael Jackson';
+
+# select statement to view changes
+SELECT sales AS 'Inflated album sales', name, artist
+FROM albums;
+
+SELECT name AS 'Albums pushed back to the 1800s'
+FROM albums
+WHERE release_date < 1900;
+
+SELECT name AS 'Albums by formerly known as Michael Jackson', artist
+FROM albums
+WHERE artist = 'Peter Jackson';
+
