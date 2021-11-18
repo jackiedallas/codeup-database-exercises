@@ -15,3 +15,18 @@ SELECT *
 FROM albums
 WHERE artist = 'The Beatles';
 
+# delete albums after 91'
+DELETE
+FROM albums
+WHERE release_date > 1991;
+
+# delete albums with the genre 'disco'
+DELETE
+FROM albums
+WHERE genre = 'disco';
+
+# delete albums by the beatles
+DELETE
+FROM albums
+WHERE artist = 'The Beatles';
+
