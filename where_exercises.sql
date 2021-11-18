@@ -38,6 +38,18 @@ FROM employees
 WHERE last_name LIKE '%e'
 OR last_name LIKE 'e%';
 
+# Duplicate the previous query and update it to find all employees whose last name starts and ends with 'E'
+SELECT *
+FROM employees
+WHERE last_name LIKE '%e'
+AND last_name LIKE 'e%';
+
+SELECT *
+FROM employees
+WHERE last_name LIKE '%q%'
+AND
+last_name NOT LIKE '%qu%';
+
 
 
 
