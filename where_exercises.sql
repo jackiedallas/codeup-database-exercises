@@ -10,7 +10,9 @@ SELECT *
 FROM employees
 WHERE last_name LIKE 'e%';
 
-
-
+# find all employees with a q in their last name
+SELECT *
+FROM employees
+WHERE last_name LIKE '%q%';
 
 
