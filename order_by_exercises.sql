@@ -29,7 +29,7 @@ SELECT *
 FROM employees
 WHERE last_name LIKE '%q%';
 
-# PART TWO
+# PART TWO #
 
 # update your query for irena, vidya, and maya to use or instead of in
 SELECT *
