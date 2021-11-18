@@ -25,3 +25,8 @@ SELECT name as 'Albums with less than 20 million copies sold'
 FROM albums
 WHERE sales < 20;
 
+# Albums with the genre of rock
+SELECT name as '''Rock'' albums'
+FROM albums
+WHERE genre = 'rock';
+
