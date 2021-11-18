@@ -32,6 +32,12 @@ FROM employees
 WHERE first_name IN ('Irena', 'Vidya', 'Maya')
 AND gender = 'M';
 
+# Find all employees whose last name starts or ends with 'E'
+SELECT *
+FROM employees
+WHERE last_name LIKE '%e'
+OR last_name LIKE 'e%';
+
 
 
 
