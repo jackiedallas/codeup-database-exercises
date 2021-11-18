@@ -1,5 +1,7 @@
 USE employees;
 
+# PART ONE
+
 # Find employees with the first names irena, vidya, or maya
 SELECT *
 FROM employees
@@ -15,4 +17,12 @@ SELECT *
 FROM employees
 WHERE last_name LIKE '%q%';
 
+# PART TWO
+
+# update your query for irena, vidya, and maya to use or instead of in
+SELECT *
+FROM employees
+WHERE first_name = 'Irena'
+OR first_name = 'Vidya'
+OR first_name = 'Maya';
 
