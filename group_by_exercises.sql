@@ -27,4 +27,11 @@ WHERE last_name LIKE '%q%'
 AND last_name NOT LIKE '%qu%'
 ORDER BY last_name;
 
+SELECT DISTINCT COUNT(*), last_name AS 'Unique Last names'
+FROM employees
+WHERE last_name LIKE '%q%'
+AND last_name NOT LIKE '%qu%'
+GROUP BY last_name
+ORDER BY last_name;
+
 
