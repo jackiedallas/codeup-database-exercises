@@ -15,4 +15,10 @@ WHERE last_name LIKE 'e%'
 AND last_name LIKE '%e'
 GROUP BY last_name ORDER BY last_name;
 
+SELECT CONCAT(first_name, ' ', last_name) AS 'Unique Names'
+FROM employees
+WHERE last_name LIKE 'e%'
+AND last_name LIKE '%e'
+GROUP BY first_name, last_name;
+
 
