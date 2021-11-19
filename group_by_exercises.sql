@@ -34,4 +34,10 @@ AND last_name NOT LIKE '%qu%'
 GROUP BY last_name
 ORDER BY last_name;
 
+SELECT CONCAT(COUNT(*), ' ', gender) AS 'Number of Males and Females with name of Irena, Vidya, and Maya'
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+GROUP BY gender
+ORDER BY COUNT(*) DESC;
+
 
