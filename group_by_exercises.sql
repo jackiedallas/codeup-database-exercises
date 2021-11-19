@@ -21,4 +21,10 @@ WHERE last_name LIKE 'e%'
 AND last_name LIKE '%e'
 GROUP BY first_name, last_name;
 
+SELECT DISTINCT last_name AS 'Unique Last names'
+FROM employees
+WHERE last_name LIKE '%q%'
+AND last_name NOT LIKE '%qu%'
+ORDER BY last_name;
+
 
