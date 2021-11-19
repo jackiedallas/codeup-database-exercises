@@ -28,7 +28,9 @@ AND day(birth_date) = 25;
 # find all employees with a q in their last name
 SELECT *
 FROM employees
-WHERE last_name LIKE '%q%';
+WHERE year(hire_date) BETWEEN 1990 AND 1999
+AND month(birth_date) = 12
+AND day(birth_date) = 25;
 
 # PART TWO #
 
