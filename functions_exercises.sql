@@ -22,8 +22,8 @@ ORDER BY last_name LIKE '%e';
 
 SELECT *
 FROM employees
-WHERE last_name LIKE 'e%'
-ORDER BY emp_no DESC;
+WHERE month(birth_date) = 12
+AND day(birth_date) = 25;
 
 # find all employees with a q in their last name
 SELECT *
