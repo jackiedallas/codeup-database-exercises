@@ -40,7 +40,8 @@ SELECT CONCAT(first_name, ' ', last_name, ' = ', DATEDIFF(NOW(), hire_date))
 AS 'Days Worked at company by employees from the 90s'
 FROM employees
 WHERE hire_date LIKE '199%'
-AND birth_date LIKE '%12-25';
+AND birth_date LIKE '%12-25'
+ORDER BY DATEDIFF(NOW(), hire_date) DESC;
 
 
 
