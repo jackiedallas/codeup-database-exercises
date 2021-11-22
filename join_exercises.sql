@@ -57,5 +57,13 @@ JOIN departments d on de.dept_no = d.dept_no
 WHERE t.to_date LIKE '9999%' AND de.to_date LIKE '9999%' AND dept_name = 'Customer Service'
 GROUP BY Title;
 
+SELECT DISTINCT d.dept_name AS 'Department Name', CONCAT(e.first_name, ' ', e.last_name) AS 'Department Manager', s.salary AS Salary
+FROM departments AS d
+JOIN dept_manager dm on d.dept_no = dm.dept_no
+JOIN employees e on dm.emp_no = e.emp_no
+JOIN salaries s on e.emp_no = s.salary
+WHERE dm.to_date LIKE '9999%'
+ORDER BY dept_name;
+
 
 
