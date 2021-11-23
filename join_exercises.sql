@@ -62,8 +62,13 @@ FROM departments AS d
 JOIN dept_manager dm on d.dept_no = dm.dept_no
 JOIN employees e on dm.emp_no = e.emp_no
 JOIN salaries s on e.emp_no = s.salary
-WHERE dm.to_date LIKE '9999%'
+WHERE dm.to_date LIKE '9999%' AND s.to_date LIKE '9999%'
 ORDER BY dept_name;
+
+# SELECT CONCAT(e.first_name, ' ', e.last_name) AS Employee, dept_name AS Department, CONCAT(e.first_name, ' ', e.last_name) AS Manager
+# FROM employees AS e
+# JOIN departments
+# JOIN dept_manager dm on e.emp_no = dm.emp_no;
 
 
 
